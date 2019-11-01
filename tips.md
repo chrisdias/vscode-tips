@@ -10,7 +10,8 @@ Chris Dias
   Insiders Build
   
 ## Developer Tools
-  * Screencast mode
+  * Screencast Mode 
+  * Show running extensions, shows startup time
   * performance
   * Extensions
 
