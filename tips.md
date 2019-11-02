@@ -91,9 +91,14 @@ Chris Dias
   
 
 ## Terminals
-  * Fun with shell
-  * External terminal (CMD+Shift+C)
-  * splitting
+  * Default Shell (drop down)
+  * External terminal (`CMD+Shift+C`)
+  * splitting 
+  * tmux
+    * `tmux a` attach
+    * `ctrl+b %` split vert
+    * `ctrl+b q` pane numbers
+    * `ctrl+b ->` `ctrl+b <-` move
   * renaming
   * run selected text in terminal
     * bind to key
