@@ -6,61 +6,88 @@ Microsoft Ignite 2019
 Chris Dias
 
 
-## Start
-  Insiders Build
+## Warm Up
+  * Insiders Build
   
+  * Command Line
+    * `code .`  (need to install on path)
+    * `code-insiders .`   
+    * `-r` to reuse the same window
+    * `-d` to diff two files
+    * `-w` lets you use as your git editor
+      * `git config --global core.editor "code-insiders -w"`
+
+## Navigation
+  * `F1` or `CMD+Shift+P` Command Palette
+    * `?` Help
+    * `>` Commands
+    * Fuzzy file search
+    * `@` Symbol view
+  * `CMD+SHIFT+;` breadcrumbs 
+  * `CMD+R` recent projects, files
+  * `CMD+B` hide/unhide Sidebar
+  * `CMD+n` to navigate editor groups
+  * `CTRL+n` to navigate editors 
+  * `alt` + hover, click to split editors horiz/vert
+  * `CMD+K 7` to enter Zen Mode
+    * `esc esc` to exit!
+  * `SHIFT+CMD+D` to focus debug
+  * `SHIFT+CMD+E` to focus explorer
+  * `SHIFT+CMD+F` to focus search
+  * `SHIFT+CMD+X` to focus extensions
+  * `SHIFT+CTRL+G` to focus SCC
+    * why not `CMD`? That's bound to Find Previous, a common binding... how do we we know?  Keyboard Shortcuts!
+
+  * Key Bindings
+    * Keymap Extensions
+    * Bindings
+    * When clause
+
 ## Developer Tools
-  * Screencast Mode 
-  * Show running extensions, shows startup time
-  * performance
-  * Extensions
+  * `F1` > `Developer`
+  * `Toggle Screencast Mode`
+  * `Reload Window`
+  * `Reload with Extensions Disabled`
+  * `Show running extensions`
+  * `Set Log Level`
+  * `Show Logs`
 
 ## Customizing the Environment
-  * move sidebar right? no jumping
-  * Themes
-    * Preview
-    * Override Themes in Settings
-    * Create your own theme
-  * Icon Themes
-  * Viewlet
-    * Open Files
-      * Control the Size
-      * Hide
-    * Activity Bar
-      * Hide/Show/Move Icons
-    * Explorers
-      * Hide/Show
-  * Windows
-    * Alt + to split horiz/vert
-    * Pane management
-  * Font Ligatures
-    * Cascadia Code
+  
+### Themes
+  * Two types: Icon and Environment
+    * Default: `Seti` File Icons, change to Material
+  * Quick "Preview"
+  * Extension search query language
+    * Built-in Extensions
+  * Override Themes in Settings
+  * Create your own theme: `Developer Tools: Generate Color Theme from Current Settings`
+    * `vsce`
 
-## Explorer
-  * Add a file and a folder (e.g. type 'foo/bar/index.html`)
-
+### Side, Activity Bars
+  * Right Click, Move Left/Right
+  * Explorer
+    * Open Editors
+      * Control the number in settings
+      * Right click, Hide
+    * Add a file and a folder (e.g. type 'foo/bar/index.html`)
+      * Works with `code ./foo/bar/index.html` too
+  * Search
+    * Right click, toggle location
+  * Activity Bar
+    * Hide/Show/Move Icons
+  * Status Bar
+    * right click to hide extension contributions
+  
 ## Settings
   * UI vs JSON
   * Workspace vs Global vs Remote
-
-## Key Bindings
-  * keymap extensions
-  * when clause
-
-## Navigating the Environment
-  * Command Palette
-  * Cmd+R
-  * Keybindings
-  * Zen Mode
-  * Fuzzy search
-  * symbol view
-  * breadcrumbs
-
-## Extensions
   * Auto Update
-  * Searching language syntax
-  * Disable all
-  * Hide recommendations: showRecommendationsOnlyOnDemand
+    * Extension auto update
+    * Hide recommendations: showRecommendationsOnlyOnDemand
+  * Font Ligatures
+    * Fonts.txt
+    * Cascadia Code
   
 
 ## Terminals
