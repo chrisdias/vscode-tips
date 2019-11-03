@@ -91,77 +91,82 @@ Chris Dias
   
 
 ## Terminals
-  * Default Shell (drop down)
   * External terminal (`CMD+Shift+C`)
-  * splitting 
-  * tmux
+  * Internal terminal
+    * Default Shell (drop down)
+    * settings
+  * Good: Splitting 
+    * Naming (`F1 term`)
+  * Better: `tmux`
     * `tmux a` attach
     * `ctrl+b %` split vert
     * `ctrl+b q` pane numbers
     * `ctrl+b ->` `ctrl+b <-` move
-  * renaming
   * run selected text in terminal
     * bind to key
 
 ## Editing Code
+  * Multi-Cursors
+    * CMD+D
+    * Add cursors to search results (CMD+D)
+    * Add cursors on every search result (CMD+Shift+L)
+  * Selection expansion (CMD+Shift+Ctrl+Arrow)
   * IntelliCode
   * Emmet
+    * div>ul>li*3>span
     * balance in/out (map to keyboard shortcut)
+    * Using Emmet to Balance Inward/Outward 
+      * bind to a keyboard shortcut
+    * Emmet’s Wrap individual lines
+    * Emmet Update Image Size
+
   * Formatting
     * Formatting Extensions
     * Format on Save, Paste, Type
   * JSON IntelliSense
     * package json packages
-  * Multi-Cursors
-    * CMD+D
+  * CSS
+    * Getting CSS/SCSS preview by mousing over the selector
+    * CSS help (mozilla, accessibility)
   * Quick Fixes
   * Refactoring
+    * refactor promises to async/await
+    * full function to arrow function
+    * auto imports (and configuring them)
+    * extract method and other refactorings
+    * Move to a new file / and how it changes import references
+    * refactor require to import   
   * Snippets
-  * JS Type Checking
-  * IntelliCode
-  * Multiple Cursors
-  * Add cursors to search results (CMD+D)
-  * Add cursors on every search result (CMD+Shift+L)
-  * Emmet (div>ul>li*3>span)
-  * Selection expansion (CMD+Shift+Ctrl+Arrow)
+  * JS Type Checking with `ts-check`
   * collapsable reigons
-  * refactor promises to async/await
-  * type checking in js
-  * auto imports (and configuring them)
-  * full function to arrow function
-  * extract method and other refactorings
-  * ts-check
 
+## Linting Code
+  * prettier/eslint setup (conflicts with vscode settings too)
 
 
 ## Debugging
-  * NodeJS
   * Single File
+  * Client side browser debugging
   * Launch.json
   * Compound 
   * Auto Attach (start with node --inspect)
   * Log points (eliminate console.log)
   * Column breakpoints, data breakpoints
-  * C# debugging?
-  * PS debugging?
   * pre/post launch tasks
-  * debug receipes
-  * client side browser debugging
-
+  * Debug receipes repo
 
 ## Docker
   * Extension
   * Add files to workspace
   * Debugging
-
-## Cloud
-  * App Service
-  * Functions
+  * Logs, Inspect
 
 ## SCC
   * Built in support
   * GHPR
   * Actions
+  * gutter decoratin for changes
+  * compare files
 
 ## Tasks
   * auto detect package.json
@@ -170,46 +175,13 @@ Chris Dias
   * debugging
 
 ## Remote Development
-  * Local setup too hard
-  * locked down box
   * SSH
-  * WSL
   * Containers
 
 
-## Extensions
+## Favorite Extensions
   * Close All (Ben's)
   * Open/reopen Workbench (Mine)
   * GitLens
   * LiveShare
-
- 
-https://burkeholland.gitbook.io/vs-code-can-do-that/
- 
-My personal faves…
- 
-Move sidebar right. Do it. You know you want to.
-Browser debugging. This is still the number 1 tip on vscodecandothat.com
-Collapsible regions
-Refactor promises to async/await
-Using Emmet to Balance Inward/Outward and mapping that to a keyboard shortcut so it’s easier to select an entire element and all its contents
-Soft Undo
-Inline file and folder nesting (via simply changing the file/folder name)
-Getting CSS/SCSS preview by mousing over the selector
-Emmet’s Wrap individual lines
-Emmet Update Image Size
-
-docker debug, stream logs, ssh, etc
-azure functions debug
-prettier/eslint setup - people dig this. it's not easy to get it to work for everyone (conflicts with vscode settings too)
-settings sync and settings.json (people like seeing settings they can grab)
-shortcuts. people LOVE shortcuts
-find references
-Move to a new file / and how it changes import references
-refactor require to import   
-
-
-
-  
-
 
