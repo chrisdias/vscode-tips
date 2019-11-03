@@ -107,28 +107,32 @@ Chris Dias
 
 ## Editing Code
   * Multi-Cursors
-    * CMD+D
-    * Add cursors to search results (CMD+D)
-    * Add cursors on every search result (CMD+Shift+L)
-  * Selection expansion (CMD+Shift+Ctrl+Arrow)
+    * `CMD+D` to add cursors to search results
+    * `CMD+SHIFT+L` to add cursors on every search result
+  * `CMD+Shift+Ctrl+Arrow` to expand selection
   * IntelliCode
   * Emmet
-    * div>ul>li*3>span
-    * balance in/out (map to keyboard shortcut)
-    * Using Emmet to Balance Inward/Outward 
-      * bind to a keyboard shortcut
-    * Emmet’s Wrap individual lines
-    * Emmet Update Image Size
+    * `!` to scaffold HTML page
+    * Down: `div>ul>li*3>span.className`
+    * Up: Wrap with Abbreviation
 
   * Formatting
     * Formatting Extensions
+    * svg -> xml formatter
     * Format on Save, Paste, Type
+
   * JSON IntelliSense
     * package json packages
+  
   * CSS
     * Getting CSS/SCSS preview by mousing over the selector
     * CSS help (mozilla, accessibility)
-  * Quick Fixes
+  
+  * Type Checking JavaScript
+    * `@ts-check`
+
+  * Quick Fixes and Refactoring
+
   * Refactoring
     * refactor promises to async/await
     * full function to arrow function
@@ -136,13 +140,6 @@ Chris Dias
     * extract method and other refactorings
     * Move to a new file / and how it changes import references
     * refactor require to import   
-  * Snippets
-  * JS Type Checking with `ts-check`
-  * collapsable reigons
-
-## Linting Code
-  * prettier/eslint setup (conflicts with vscode settings too)
-
 
 ## Debugging
   * Single File
@@ -152,7 +149,7 @@ Chris Dias
   * Auto Attach (start with node --inspect)
   * Log points (eliminate console.log)
   * Column breakpoints, data breakpoints
-  * pre/post launch tasks
+  * Pre/Post launch tasks
   * Debug receipes repo
 
 ## Docker
@@ -177,7 +174,6 @@ Chris Dias
 ## Remote Development
   * SSH
   * Containers
-
 
 ## Favorite Extensions
   * Close All (Ben's)
