@@ -13,14 +13,14 @@ Chris Dias
 
 ---
 ## Command Line
-  * Need to install on Path (Mac)
   * open current folder
     * `code .`
     * `code-insiders .`
   * `-r` to reuse the same window (example: `code . -r`)
   * `-d` to diff two files (example: `code -d file1.js file2.js`)
-  * `-w` lets you use as your git editor
+  * `-w` to wait, lets you use as your git editor
     * `git config --global core.editor "code-insiders -w"`
+  * Need to install on Path (Mac)
 
 ---
 ## Developer Tools
@@ -73,7 +73,7 @@ Chris Dias
 ## Key Bindings
   * Record keys to find bound action, conflicts
   * Custom Bindings to commands, tasks
-  * When clause to scope whena binding is active
+  * When clause to scope when a binding is active
   * [Keymap Extensions](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs)
 
 ---
