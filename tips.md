@@ -5,10 +5,24 @@ Microsoft Ignite 2019
 
 Chris Dias
 
-
+---
 ## Warm Up
-  * Insiders Build
+  * [Insiders Build](https://code.visualstudio.com/insiders/)
+  * [Close All Extension](https://marketplace.visualstudio.com/items?itemName=benjpas.close-all) 
+  * [Open Folder Context Menu Extension](https://marketplace.visualstudio.com/items?itemName=chrisdias.vscode-opennewinstance)
 
+---
+## Command Line
+  * Need to install on Path (Mac)
+  * open current folder
+    * `code .`
+    * `code-insiders .`
+  * `-r` to reuse the same window (example: `code . -r`)
+  * `-d` to diff two files (example: `code -d file1.js file2.js`)
+  * `-w` lets you use as your git editor
+    * `git config --global core.editor "code-insiders -w"`
+
+---
 ## Developer Tools
   * `F1` > `Developer`
   * `Toggle Screencast Mode`
@@ -18,14 +32,22 @@ Chris Dias
   * `Set Log Level`
   * `Show Logs`
 
-## Command Line
-  * `code .`  (need to install on path)
-  * `code-insiders .`   
-  * `-r` to reuse the same window
-  * `-d` to diff two files
-  * `-w` lets you use as your git editor
-    * `git config --global core.editor "code-insiders -w"`
+---
+## Themes
+  * Two types: Icon and Environment
+    * Default: `Seti` File Icons, change to Material
+  * Quick "Preview"
+  * Extension search query language
+    * `@builtin` shows built in extensions
+    * `@disabled`  shows disabled extensions
+    * `@sort:installs ` sort by popularity
+    * ...
+  * Override Themes in Settings
+    * `workspace.colorCustomizations`: {}
+  * Create your own theme: `Developer Tools: Generate Color Theme from Current Settings`
+    * `vsce`
 
+---
 ## Navigation
   * `F1` or `CMD+Shift+P` Command Palette
     * `?` Help
@@ -36,7 +58,7 @@ Chris Dias
   * `CMD+R` recent projects, files
   * `CMD+B` hide/unhide Sidebar
   * `CMD+n` to navigate editor groups
-  * `CTRL+n` to navigate editors 
+    * `CTRL+n` to navigate editors with group
   * `alt` + hover, click to split editors horiz/vert
   * `CMD+K Z` to enter Zen Mode
     * `esc esc` to exit!
@@ -47,48 +69,39 @@ Chris Dias
   * `SHIFT+CTRL+G` to focus SCC
     * why not `CMD`? That's bound to Find Previous, a common binding... how do we we know?  Keyboard Shortcuts!
 
+---
 ## Key Bindings
-  * Keymap Extensions
-  * Bindings
-  * When clause
+  * Record keys to find bound action, conflicts
+  * Custom Bindings to commands, tasks
+  * When clause to scope whena binding is active
+  * [Keymap Extensions](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs)
 
-## Themes
-  * Two types: Icon and Environment
-    * Default: `Seti` File Icons, change to Material
-  * Quick "Preview"
-  * Extension search query language
-    * Built-in Extensions
-  * Override Themes in Settings
-  * Create your own theme: `Developer Tools: Generate Color Theme from Current Settings`
-    * `vsce`
-
+---
 ## Side, Activity Bars
-  * Right Click, Move Left/Right
-  * Explorer
+  * SideBar: Right Click, Move Left/Right
+  * Explorer Viewlet
     * Open Editors
-      * Control the number in settings
-      * Right click, Hide
+      * Control the number visible files in settings
+      * Right click, Hide sashes
     * Add a file and a folder (e.g. type 'foo/bar/index.html`)
       * Works with `code ./foo/bar/index.html` too
+    * Compare files
+    * Gutter diffs (when backed by SCC)
   * Search
     * Right click, toggle location
   * Activity Bar
     * Hide/Show/Move Icons
   * Status Bar
-    * right click to hide extension contributions
-  
+    * Right click to hide extension contributions
+
+---
 ## Settings
   * UI vs JSON
-  * Workspace vs Global vs Remote
-  * Auto Update
-    * Extension auto update
-    * Hide recommendations: showRecommendationsOnlyOnDemand
-  * Font Ligatures
-    * Fonts.txt
-    * Cascadia Code
-  * ToDo: What to go through?
+  * Workspace vs. User
+  * [My Settings](https://gist.github.com/chrisdias/4fbc535ce1ab5387f6623e25df62de19)
 
-## Terminals
+---
+## Mastering the Terminal
 * External terminal (`CMD+Shift+C`)
 * Internal terminal (`CTRL+` `)
   * Default Shell (drop down)
@@ -96,34 +109,31 @@ Chris Dias
 * Good: Splitting 
   * Naming (`F1 term`)
 * Better: `tmux`
-  * `tmux a` attach
   * `ctrl+b %` split vert
   * `ctrl+b q` pane numbers
   * `ctrl+b ->` `ctrl+b <-` move
+  * Close VCode, reopen and reattach with `tmux a`
 * cmatrix
 
+---
+
 ## Editing Code
-  * Warm up with Multiple Cursors
+  * Multiple Cursors
     * `CMD+D` to add cursors to search results
     * `CMD+SHIFT+L` to add cursors on every search result
   
   * `CMD+Shift+Ctrl+Arrow` to expand/contract selection
 
-  * Completions
-    * IntelliCode
-    * JSON Completions
-      * `package.json modules`
-
   * Emmet
     * `!` to scaffold HTML page
     * Down: `div>ul>li*3>span.className`
-    * Up: Wrap with Abbreviation
+    * Up: `Emmet: Wrap with Abbreviation`
 
   * Formatting
     * Formatting Extensions
       * Prettier 
     * svg -> xml formatter
-    * Format on Save, Paste, Type
+    * Format on Save
   
   * HTML and CSS editing
     * Getting CSS/SCSS preview by mousing over the selector
@@ -136,33 +146,30 @@ Chris Dias
       * extract to function
       * extract to file
 
-  * SCC/Changes
-    * Diff view of changes from gutter
-
+---
 ## Debugging
-  * Single File
+  * Single File 
   * Auto Attach (start with node --inspect)
   * Log points (eliminate `console.log`)
   * `launch.json`
   * Compound debugging
 
+---
 ### Docker
-  * Extension
+  * [Docker Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
   * Add files to workspace
+  * `docker-compose`
+  * Attach a shell
   * Debugging
 
-## Tasks
-  * auto detect package.json
-  * tasks.json
-  * key bindings
-  * debugging
-
+---
 ## Remote Development
   * SSH
   * Containers
+  * Cloud Environments
 
-## Favorite Extensions
-  * Close All (Ben's)
-  * Open/reopen Workbench (Mine)
+---
+# Happy Coding!
+
 
 
