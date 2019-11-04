@@ -112,7 +112,8 @@ Chris Dias
   * `ctrl+b %` split vert
   * `ctrl+b q` pane numbers
   * `ctrl+b ->` `ctrl+b <-` move
-  * Close VCode, reopen and reattach with `tmux a`
+  * Close VCode, reopen and reattach with 
+  * `tmux ls` to list sessions, `tmux a` to attach
 * cmatrix
 
 ---
