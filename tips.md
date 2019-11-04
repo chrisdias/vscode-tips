@@ -8,14 +8,23 @@ Chris Dias
 
 ## Warm Up
   * Insiders Build
-  
-  * Command Line
-    * `code .`  (need to install on path)
-    * `code-insiders .`   
-    * `-r` to reuse the same window
-    * `-d` to diff two files
-    * `-w` lets you use as your git editor
-      * `git config --global core.editor "code-insiders -w"`
+
+## Developer Tools
+  * `F1` > `Developer`
+  * `Toggle Screencast Mode`
+  * `Reload Window`
+  * `Reload with Extensions Disabled`
+  * `Show running extensions`
+  * `Set Log Level`
+  * `Show Logs`
+
+## Command Line
+  * `code .`  (need to install on path)
+  * `code-insiders .`   
+  * `-r` to reuse the same window
+  * `-d` to diff two files
+  * `-w` lets you use as your git editor
+    * `git config --global core.editor "code-insiders -w"`
 
 ## Navigation
   * `F1` or `CMD+Shift+P` Command Palette
@@ -29,7 +38,7 @@ Chris Dias
   * `CMD+n` to navigate editor groups
   * `CTRL+n` to navigate editors 
   * `alt` + hover, click to split editors horiz/vert
-  * `CMD+K 7` to enter Zen Mode
+  * `CMD+K Z` to enter Zen Mode
     * `esc esc` to exit!
   * `SHIFT+CMD+D` to focus debug
   * `SHIFT+CMD+E` to focus explorer
@@ -38,23 +47,12 @@ Chris Dias
   * `SHIFT+CTRL+G` to focus SCC
     * why not `CMD`? That's bound to Find Previous, a common binding... how do we we know?  Keyboard Shortcuts!
 
-  * Key Bindings
-    * Keymap Extensions
-    * Bindings
-    * When clause
+## Key Bindings
+  * Keymap Extensions
+  * Bindings
+  * When clause
 
-## Developer Tools
-  * `F1` > `Developer`
-  * `Toggle Screencast Mode`
-  * `Reload Window`
-  * `Reload with Extensions Disabled`
-  * `Show running extensions`
-  * `Set Log Level`
-  * `Show Logs`
-
-## Customizing the Environment
-  
-### Themes
+## Themes
   * Two types: Icon and Environment
     * Default: `Seti` File Icons, change to Material
   * Quick "Preview"
@@ -64,7 +62,7 @@ Chris Dias
   * Create your own theme: `Developer Tools: Generate Color Theme from Current Settings`
     * `vsce`
 
-### Side, Activity Bars
+## Side, Activity Bars
   * Right Click, Move Left/Right
   * Explorer
     * Open Editors
@@ -88,29 +86,34 @@ Chris Dias
   * Font Ligatures
     * Fonts.txt
     * Cascadia Code
-  
+  * ToDo: What to go through?
 
 ## Terminals
-  * External terminal (`CMD+Shift+C`)
-  * Internal terminal
-    * Default Shell (drop down)
-    * settings
-  * Good: Splitting 
-    * Naming (`F1 term`)
-  * Better: `tmux`
-    * `tmux a` attach
-    * `ctrl+b %` split vert
-    * `ctrl+b q` pane numbers
-    * `ctrl+b ->` `ctrl+b <-` move
-  * run selected text in terminal
-    * bind to key
+* External terminal (`CMD+Shift+C`)
+* Internal terminal (`CTRL+` `)
+  * Default Shell (drop down)
+  * Settings
+* Good: Splitting 
+  * Naming (`F1 term`)
+* Better: `tmux`
+  * `tmux a` attach
+  * `ctrl+b %` split vert
+  * `ctrl+b q` pane numbers
+  * `ctrl+b ->` `ctrl+b <-` move
+* cmatrix
 
 ## Editing Code
-  * Multi-Cursors
+  * Warm up with Multiple Cursors
     * `CMD+D` to add cursors to search results
     * `CMD+SHIFT+L` to add cursors on every search result
-  * `CMD+Shift+Ctrl+Arrow` to expand selection
-  * IntelliCode
+  
+  * `CMD+Shift+Ctrl+Arrow` to expand/contract selection
+
+  * Completions
+    * IntelliCode
+    * JSON Completions
+      * `package.json modules`
+
   * Emmet
     * `!` to scaffold HTML page
     * Down: `div>ul>li*3>span.className`
@@ -118,52 +121,35 @@ Chris Dias
 
   * Formatting
     * Formatting Extensions
+      * Prettier 
     * svg -> xml formatter
     * Format on Save, Paste, Type
-
-  * JSON IntelliSense
-    * package json packages
   
-  * CSS
+  * HTML and CSS editing
     * Getting CSS/SCSS preview by mousing over the selector
     * CSS help (mozilla, accessibility)
+    * ARIA help in `aria-` HTML tags
   
-  * Type Checking JavaScript
-    * `@ts-check`
+  * JavaScript
+    * type checking with `@ts-check`
+    * Refactorings
+      * extract to function
+      * extract to file
 
-  * Quick Fixes and Refactoring
-
-  * Refactoring
-    * refactor promises to async/await
-    * full function to arrow function
-    * auto imports (and configuring them)
-    * extract method and other refactorings
-    * Move to a new file / and how it changes import references
-    * refactor require to import   
+  * SCC/Changes
+    * Diff view of changes from gutter
 
 ## Debugging
   * Single File
-  * Client side browser debugging
-  * Launch.json
-  * Compound 
   * Auto Attach (start with node --inspect)
-  * Log points (eliminate console.log)
-  * Column breakpoints, data breakpoints
-  * Pre/Post launch tasks
-  * Debug receipes repo
+  * Log points (eliminate `console.log`)
+  * `launch.json`
+  * Compound debugging
 
-## Docker
+### Docker
   * Extension
   * Add files to workspace
   * Debugging
-  * Logs, Inspect
-
-## SCC
-  * Built in support
-  * GHPR
-  * Actions
-  * gutter decoratin for changes
-  * compare files
 
 ## Tasks
   * auto detect package.json
@@ -178,6 +164,5 @@ Chris Dias
 ## Favorite Extensions
   * Close All (Ben's)
   * Open/reopen Workbench (Mine)
-  * GitLens
-  * LiveShare
+
 
