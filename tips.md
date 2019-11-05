@@ -14,10 +14,10 @@ Chris Dias
   * open current folder
     * `code .`
     * `code-insiders .`
-  * `-r` to reuse the same window (example: `code . -r`)
-  * `-d` to diff two files (example: `code -d file1.js file2.js`)
   * `-w` to wait, lets you use as your git editor
     * `git config --global core.editor "code-insiders -w"`
+  * `-d` to diff two files (example: `code -d file1.js file2.js`)
+  * `-r` to reuse the same window (example: `code . -r`)
   * Need to install on Path (Mac)
 
 
@@ -25,32 +25,20 @@ Chris Dias
 ## Themes
   * Two types: Icon and Environment
     * Default: `Seti` File Icons, change to Material
-  * Quick "Preview"
   * Extension search query language
     * `@builtin` shows built in extensions
     * `@disabled`  shows disabled extensions
     * `@sort:installs ` sort by popularity
     * ...
   * Override Themes in Settings
-    * `workspace.colorCustomizations`: {}
+    * `workspace.colorCustomizations: {}`
   * Create your own theme: `Developer Tools: Generate Color Theme from Current Settings`
-    * `vsce`
+    * `yo code`
 
 ---
 ## Navigation
-  * `F1` or `CMD+Shift+P` Command Palette
-    * `?` Help
-    * `>` Commands
-    * Fuzzy file search
-    * `@` Symbol view
-  * `CMD+SHIFT+;` breadcrumbs 
-  * `CMD+R` recent projects, files
-  * `CMD+B` hide/unhide Sidebar
-  * `CMD+n` to navigate editor groups
-    * `CTRL+n` to navigate editors with group
-  * `alt` + hover, click to split editors horiz/vert
-  * `CMD+K Z` to enter Zen Mode
-    * `esc esc` to exit!
+
+### Viewlet Navigation
   * `SHIFT+CMD+D` to focus debug
   * `SHIFT+CMD+E` to focus explorer
   * `SHIFT+CMD+F` to focus search
@@ -59,11 +47,31 @@ Chris Dias
     * why not `CMD`? That's bound to Find Previous, a common binding... how do we we know?  Keyboard Shortcuts!
 
 ---
-## Key Bindings
+#### Key Bindings
   * Record keys to find bound action, conflicts
   * Custom Bindings to commands, tasks
   * When clause to scope when a binding is active
   * [Keymap Extensions](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs)
+
+---
+### Workspace Navigation
+  * `CMD+R` recent projects, files
+  * `F1` or `CMD+Shift+P` Command Palette
+    * `?` Help
+    * `>` Commands
+    * `CMD+P` Fuzzy file search
+    * `@` Symbol view
+  * `CMD+SHIFT+;` breadcrumbs 
+
+---
+### Editor Navigation
+  * `CMD+n` to navigate editor groups
+    * `CTRL+n` to navigate editors with group
+  * `alt` + hover, click to split editors horiz/vert
+  * `CMD+B` hide/unhide Sidebar
+  * `CMD+K Z` to enter Zen Mode
+    * `esc esc` to exit!
+
 
 ---
 ## Side, Activity Bars
@@ -169,6 +177,3 @@ Chris Dias
 
 ---
 # Happy Coding!
-
-
-
