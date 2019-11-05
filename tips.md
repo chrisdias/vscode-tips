@@ -8,8 +8,6 @@ Chris Dias
 ---
 ## Warm Up
   * [Insiders Build](https://code.visualstudio.com/insiders/)
-  * [Close All Extension](https://marketplace.visualstudio.com/items?itemName=benjpas.close-all) 
-  * [Open Folder Context Menu Extension](https://marketplace.visualstudio.com/items?itemName=chrisdias.vscode-opennewinstance)
 
 ---
 ## Command Line
@@ -22,15 +20,6 @@ Chris Dias
     * `git config --global core.editor "code-insiders -w"`
   * Need to install on Path (Mac)
 
----
-## Developer Tools
-  * `F1` > `Developer`
-  * `Toggle Screencast Mode`
-  * `Reload Window`
-  * `Reload with Extensions Disabled`
-  * `Show running extensions`
-  * `Set Log Level`
-  * `Show Logs`
 
 ---
 ## Themes
@@ -97,6 +86,7 @@ Chris Dias
 ---
 ## Settings
   * UI vs JSON
+    * Natural Language Search
   * Workspace vs. User
   * [My Settings](https://gist.github.com/chrisdias/4fbc535ce1ab5387f6623e25df62de19)
 
@@ -129,13 +119,7 @@ Chris Dias
     * `!` to scaffold HTML page
     * Down: `div>ul>li*3>span.className`
     * Up: `Emmet: Wrap with Abbreviation`
-
-  * Formatting
-    * Formatting Extensions
-      * Prettier 
-    * svg -> xml formatter
-    * Format on Save
-  
+ 
   * HTML and CSS editing
     * Getting CSS/SCSS preview by mousing over the selector
     * CSS help (mozilla, accessibility)
@@ -156,6 +140,25 @@ Chris Dias
   * Compound debugging
 
 ---
+## Remote Development
+  * SSH
+  * WSL
+  * Containers
+  * Cloud Environments
+
+---
+## Extras
+
+---
+### Developer Tools
+  * `F1` > `Developer`
+  * `Toggle Screencast Mode`
+  * `Reload Window`
+  * `Reload with Extensions Disabled`
+  * `Show running extensions`
+  * `Set Log Level`
+  * `Show Logs`
+
 ### Docker
   * [Docker Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
   * Add files to workspace
@@ -163,11 +166,6 @@ Chris Dias
   * Attach a shell
   * Debugging
 
----
-## Remote Development
-  * SSH
-  * Containers
-  * Cloud Environments
 
 ---
 # Happy Coding!
