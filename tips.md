@@ -8,6 +8,7 @@ Chris Dias
 ---
 ## Warm Up
   * [Insiders Build](https://code.visualstudio.com/insiders/)
+  * Command Palette `CMD+SHIFT+P` or `F1`
 
 ---
 ## Command Line
@@ -19,7 +20,6 @@ Chris Dias
   * `-d` to diff two files (example: `code -d file1.js file2.js`)
   * `-r` to reuse the same window (example: `code . -r`)
   * Need to install on Path (Mac)
-
 
 ---
 ## Themes
@@ -38,46 +38,41 @@ Chris Dias
     * `yo code`
 
 ---
-## Navigation
+## Settings
+  * `CMD+,` to open settings
+  * UI vs JSON
+    * Natural Language Search
+  * Workspace vs. User
+  * [My Settings](https://gist.github.com/chrisdias/4fbc535ce1ab5387f6623e25df62de19)
 
-### Viewlet Navigation
+---
+## Navigation
+* `F1` > `Toggle Screencast Mode`
+
+### Workbench
+  * `F1` or `CMD+Shift+P` Command Palette
+    * `?` Help shows all you can do from palette
+    * `view` switcher, even ones created by extensions
+  * `CMD+B` hide/unhide Sidebar
   * `SHIFT+CMD+D` to focus debug
   * `SHIFT+CMD+E` to focus explorer
   * `SHIFT+CMD+F` to focus search
   * `SHIFT+CMD+X` to focus extensions
   * `SHIFT+CTRL+G` to focus SCC
-    * why not `CMD`? That's bound to Find Previous, a common binding... how do we we know?  Keyboard Shortcuts!
+    * Why not `CMD`? That's bound to Find Previous, a common binding... how do we we know?  Keyboard Shortcuts!
 
 ---
 #### Key Bindings
-  * Record keys to find bound action, conflicts
-  * Custom Bindings to commands, tasks
-  * When clause to scope when a binding is active
+  * Search for key combinations (record keys has a bug)
+  * Create a custom binding, click on pencil
+    * `CMD+S, C` to toggle Screencast mode
+  * Toggle `json` view
+    * `CMD+R` recent projects, files
+    * When clause to scope when a binding is active
   * [Keymap Extensions](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs)
 
 ---
-### Workspace Navigation
-  * `F1` or `CMD+Shift+P` Command Palette
-    * `?` Help
-    * `>` Commands
-    * `CMD+P` Fuzzy file search
-    * `@` Symbol view
-  * Related: `CMD+SHIFT+.` breadcrumbs 
-    * Option Left, Right to move
-  * `CMD+R` recent projects, files
-
----
-### Editor Navigation
-  * `CMD+B` hide/unhide Sidebar (create space)
-  * Split windows vertically using mouse
-    * `alt` + hover, click to split editors horiz
-  * `CMD+n` to navigate editor _groups_
-    * `CTRL+n` to navigate _editors_ with group
-  * `CMD+K Z` to enter Zen Mode
-    * `esc esc` to exit!
-
----
-## Side, Activity Bars
+### Viewlets, Activity Bars
   * SideBar: Right Click, Move Left/Right
   * Explorer Viewlet
     * Open Editors
@@ -95,11 +90,43 @@ Chris Dias
     * Right click to hide extension contributions
 
 ---
-## Settings
-  * UI vs JSON
-    * Natural Language Search
-  * Workspace vs. User
-  * [My Settings](https://gist.github.com/chrisdias/4fbc535ce1ab5387f6623e25df62de19)
+### File Navigation
+  * `CMD+P` Fuzzy file search
+    * open to side vertically
+    * `alt` to split horizontally
+  * `CMD+n` to navigate editor _groups_
+    * `CTRL+n` to navigate _editors_ with group
+  * `@` Symbol view in a file
+    * `@:` Symbol view by category
+    * Related: `CMD+SHIFT+.` breadcrumbs 
+    * Option Left, Right to move
+  * `CMD+K Z` to enter Zen Mode
+    * `esc esc` to exit!
+
+
+---
+
+## Editing Code
+  * Multiple Cursors
+    * `CMD+D` to add cursors to search results
+    * `CMD+SHIFT+L` to add cursors on every search result
+  
+  * Emmet
+    * `!` to scaffold HTML page
+    * Down: `div>ul>li*3>span.className`
+    * Up: `Emmet: Wrap with Abbreviation`
+    * `CMD+Shift+Ctrl+Arrow` to expand/contract selection
+ 
+  * HTML and CSS editing
+    * Getting CSS/SCSS preview by mousing over the selector
+    * CSS help (mozilla, accessibility)
+    * ARIA help in `aria-` HTML tags
+  
+  * JavaScript
+    * type checking with `@ts-check`
+    * Refactorings
+      * extract to function
+      * extract to file
 
 ---
 ## Mastering the Terminal
@@ -118,33 +145,8 @@ Chris Dias
 * cmatrix
 
 ---
-
-## Editing Code
-  * Multiple Cursors
-    * `CMD+D` to add cursors to search results
-    * `CMD+SHIFT+L` to add cursors on every search result
-  
-  * `CMD+Shift+Ctrl+Arrow` to expand/contract selection
-
-  * Emmet
-    * `!` to scaffold HTML page
-    * Down: `div>ul>li*3>span.className`
-    * Up: `Emmet: Wrap with Abbreviation`
- 
-  * HTML and CSS editing
-    * Getting CSS/SCSS preview by mousing over the selector
-    * CSS help (mozilla, accessibility)
-    * ARIA help in `aria-` HTML tags
-  
-  * JavaScript
-    * type checking with `@ts-check`
-    * Refactorings
-      * extract to function
-      * extract to file
-
----
 ## Debugging
-  * Single File 
+  * Single File Debugging 
     * Start without debugging: `CTRL+F5`
   * Auto Attach (start with node --inspect)
   * Log points (eliminate `console.log`)
@@ -153,10 +155,7 @@ Chris Dias
 
 ---
 ## Remote Development
-  * SSH
-  * WSL
   * Containers
-  * Cloud Environments
 
 ---
 ## Extras
