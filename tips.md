@@ -24,7 +24,9 @@ Chris Dias
 ---
 ## Themes
   * Two types: Icon and Environment
-    * Default: `Seti` File Icons, change to Material
+    * Icon
+      * Default: `Seti` File Icons, change to Material
+    * Color search...
   * Extension search query language
     * `@builtin` shows built in extensions
     * `@disabled`  shows disabled extensions
@@ -55,23 +57,24 @@ Chris Dias
 
 ---
 ### Workspace Navigation
-  * `CMD+R` recent projects, files
   * `F1` or `CMD+Shift+P` Command Palette
     * `?` Help
     * `>` Commands
     * `CMD+P` Fuzzy file search
     * `@` Symbol view
-  * `CMD+SHIFT+;` breadcrumbs 
+  * Related: `CMD+SHIFT+.` breadcrumbs 
+    * Option Left, Right to move
+  * `CMD+R` recent projects, files
 
 ---
 ### Editor Navigation
-  * `CMD+n` to navigate editor groups
-    * `CTRL+n` to navigate editors with group
-  * `alt` + hover, click to split editors horiz/vert
-  * `CMD+B` hide/unhide Sidebar
+  * `CMD+B` hide/unhide Sidebar (create space)
+  * Split windows vertically using mouse
+    * `alt` + hover, click to split editors horiz
+  * `CMD+n` to navigate editor _groups_
+    * `CTRL+n` to navigate _editors_ with group
   * `CMD+K Z` to enter Zen Mode
     * `esc esc` to exit!
-
 
 ---
 ## Side, Activity Bars
@@ -142,6 +145,7 @@ Chris Dias
 ---
 ## Debugging
   * Single File 
+    * Start without debugging: `CTRL+F5`
   * Auto Attach (start with node --inspect)
   * Log points (eliminate `console.log`)
   * `launch.json`
